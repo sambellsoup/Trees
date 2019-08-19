@@ -23,11 +23,11 @@ Elevation was by far the most predictive feature of the entire dataset with a co
 
 # Feature Engineering
 
-I created several derivations of features like squaring the hillshade values, finding the mean of the hillshade value, and finding the logarithm of elevation. These three features specifically had high multicollinearity and were dropped during feature selection. Useful features included the acidity of the soil type, which I derived from researching the quality of the soils listed. I also sorted the soils by the degree of how stony they were labeled in their descriptions, which ranged from very stony, to extremely stony, to bouldery, and even rubbly. I binned elevation and fire point distance, which both proved somewhat useful during modeling. 
+I created several derivations of features like squaring the hillshade values, finding the mean of the hillshade value, and finding the logarithm of elevation. These three features specifically had high multicollinearity and were dropped during feature selection. Useful features included the acidity of the soil type, which I derived from researching the quality of the soils listed. I also sorted the soils by the degree of how stony they were labeled in their descriptions, which ranged from very stony, to extremely stony, to bouldery, and even rubbly. I binned elevation and fire point distance, which both proved useful during modeling. 
 
 # Feature Selection
 
-I used the F Test as well as Lasso to evaluate the feature's usefulness. The top 10 features according to the F test were Elevation, SLope, Distance to Road, Areas 1 and 4, Soil Types 10, 38, 39, the category of stoniness of the soil, and the elevation binned. 
+I used the F Test as well as Lasso to evaluate the feature's usefulness. The top 10 features according to the F test were Elevation, Slope, Distance to Road, Areas 1 and 4, Soil Types 10, 38, 39, the category of stoniness of the soil, and the elevation binned. 
 
 The lasso test validated that Areas 1 & 4, Soil Types 10, 38, and 39 and elevation binned had predictive value. 
 
